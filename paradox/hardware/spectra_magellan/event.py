@@ -242,15 +242,13 @@ event_map = {0: dict(
         level=EventLevel.CRITICAL, change=dict(fire_alarm=False), type='zone', tags=['alarm', 'fire', 'restore'],
         message='Zone {label} fire alarm restore'),
     40: dict(
-        level=EventLevel.CRITICAL, type='special', tags=['alarm', 'trigger'], message="Special alarm",
-        sub={0: dict(message='Panic non-medical emergency'),
-             1: dict(message='Panic medical'),
-             2: dict(message='Panic fire'),
-             3: dict(message='Recent closing'),
-             4: dict(message='Global shutdown'),
-             5: dict(message='Duress alarm'),
-             6: dict(message='Keypad lockout'),
-             99: dict(message='Any special alarm event')}
+        level=EventLevel.WARN, type='system', tags=['trouble'],
+        sub={0: dict(message='Panic NonMed'),
+             1: dict(message='Panic Med'),
+             2: dict(message='Panic Fire'),
+             3: dict(message='N/A'),
+             4: dict(message='N/A'),
+             5: dict(message='Bell disconnected')}
     ),
     41: dict(
         level=EventLevel.INFO, change=dict(shutdown=True), type='zone', message='Zone {label} shutdown'),
