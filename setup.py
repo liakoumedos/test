@@ -19,8 +19,8 @@ setup(
     description='Interface to Paradox Alarm Panels',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    url='https://github.com/ParadoxAlarmInterface/pai',
-    download_url=f'https://github.com/ParadoxAlarmInterface/pai/archive/{VERSION}.tar.gz',
+    url='https://github.com/liakoumedos/test',
+    download_url=f'https://github.com/liakoumedos/test/archive/{VERSION}.tar.gz',
     packages=find_packages(exclude=['tests', 'tests.*', 'config.*', 'docs.*']),
     install_requires=[
         'construct~=2.9.43',
