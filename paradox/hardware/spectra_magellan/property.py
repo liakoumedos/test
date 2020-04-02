@@ -41,6 +41,22 @@ property_map = {
         level=EventLevel.CRITICAL, tags=['alarm'],
         message={"True": "{Type} {label} alarm is audible",
                  "False": "{Type} {label} alarm is silent"}),
+    "panicnonmed": dict(
+        level=EventLevel.CRITICAL, tags=['alarm'],
+        message={"True": "{Type} {label} alarm is panicnonmed",
+                 "False": "{Type} {label} alarm is silent"}),
+    "panicmed": dict(
+        level=EventLevel.CRITICAL, tags=['alarm'],
+        message={"True": "{Type} {label} alarm is panicmed",
+                 "False": "{Type} {label} alarm is silent"}),
+    "panicfire": dict(
+        level=EventLevel.CRITICAL, tags=['alarm'],
+        message={"True": "{Type} {label} alarm is panicfire",
+                 "False": "{Type} {label} alarm is silent"}),
+    "duress": dict(
+        level=EventLevel.CRITICAL, tags=['alarm'],
+        message={"True": "{Type} {label} alarm is duress",
+                 "False": "{Type} {label} alarm is silent"}),
     "auto_arming_engaged": dict(
         level=EventLevel.CRITICAL, tags=['arm'],
         message={"True": "{Type} {label} auto arming engaged",
